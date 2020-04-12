@@ -1,0 +1,15 @@
+[book]
+authors = ["Hanwen Cheng"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Litentry Documentation"
+description = "This is official Litentry Documentation"
+
+[build]
+use-default-preprocessors = false
+
+[preprocessor.links]
+
+[output.html]
+git-repository-url = "https://github.com/litentry/"
