@@ -13,3 +13,4 @@ use-default-preprocessors = false
 
 [output.html]
 git-repository-url = "https://github.com/litentry/"
+default-theme = "light"
