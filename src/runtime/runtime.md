@@ -12,7 +12,7 @@ The identity runtime protocol abstract all the persons and devices authorization
 
 3. Data: the related identity data, like identity meta information and token specification. 
 
-![Identity Runtime Protocol](https://static.wixstatic.com/media/760d3a_5c9818f59cd74e63a9cacd72d51db660~mv2.png/v1/fill/w_823,h_462,al_c,q_90/760d3a_5c9818f59cd74e63a9cacd72d51db660~mv2.webp)
+![Identity Runtime Protocol](./runtime.png)
 
 ### Examples:
 

@@ -16,3 +16,5 @@ It mainly includes:
 
 * Javascript binding library: The javascript binding library will directly connect the front-end applications with Blockchain, for example, React or React Native applications.
 
+![Info Server Architecture](./server.png)
+

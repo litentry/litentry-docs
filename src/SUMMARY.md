@@ -1,11 +1,10 @@
 # Summary
 
 - [Introduction](./introduction/introduction.md)
-- [Web App](./web-app/web-app.md)
-- [Authentication Mobile App](./mobile-app/mobile-app.md)
-- [Light Paper](./light-paper/light-paper.md)
-    - [General](./light-paper/general.md)
-    - [Background](./light-paper/background.md)
-- [API](./api/api.md)
+- [Architecture](./architecture/architecture.md)
+    - [Privacy Data Feeding](./architecture/privacyData.md)
+- [SubAuth](./web-app/web-app.md)
 - [Runtime](./runtime/runtime.md)
+- [Authentication Mobile App](./mobile-app/mobile-app.md)
+- [API Server](./api/api.md)
 - [FAQ](./faq/faq.md)
