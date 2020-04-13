@@ -18,7 +18,7 @@ script:
 deploy:
   provider: pages
   skip-cleanup: true
-  github-token: 68b95b0b22b08bf886dffe74324cb7be5f9ea9d3
+  github-token: $ACCESS_TOKEN
   local-dir: ./book
   keep-history: false
   on:
