@@ -6,7 +6,7 @@
 - [SubAuth](./web-app/web-app.md)
 - [Runtime](./runtime/runtime.md)
 - [Authentication Mobile App](./mobile-app/mobile-app.md)
-- [Data Server](./data-server/data-server.md)
+- [Middleware](./data-server/data-server.md)
 - [API](./api/api.md)
     * [Data Server](./api/dataServer.md)
     * [Chain Storage](./api/chainStorage.md)

@@ -1,6 +1,6 @@
-# Data Server
+# Middleware
 
-Github Repository: [https://github.com/litentry/litentry-api](https://github.com/litentry/litentry-api)
+[API of data server](../api/dataServer.md)
 
 Live Server: [http://112.125.25.18:3000](http://112.125.25.18:3000)
 
