@@ -19,6 +19,7 @@ deploy:
   provider: pages
   skip-cleanup: true
   github-token: $ACCESS_TOKEN
+  fqdn: docs.litentry.com
   local-dir: ./book
   keep-history: false
   on:
