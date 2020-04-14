@@ -2,6 +2,8 @@
 
 Github Repository: [https://github.com/litentry/litentry-runtime](https://github.com/litentry/litentry-runtime)
 
+As Pallet: [https://github.com/litentry/substrate/blob/master/bin/litentry/pallets/template/src/lib.rs](https://github.com/litentry/substrate/blob/master/bin/litentry/pallets/template/src/lib.rs)
+
 ### Abstract
 
 The identity runtime protocol abstract all the persons and devices authorization scenario, includes three basic definitions:
