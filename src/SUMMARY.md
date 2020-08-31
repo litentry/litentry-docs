@@ -3,7 +3,7 @@
 - [Introduction](./introduction/introduction.md)
 - [Architecture](./architecture/architecture.md)
     - [Privacy Data Feeding](./architecture/privacyData.md)
-- [SubAuth](./web-app/web-app.md)
+- [SDK](./sdk/sdk.md)
 - [Runtime](./runtime/runtime.md)
 - [Authentication Mobile App](./mobile-app/mobile-app.md)
 - [Middleware](./data-server/data-server.md)
