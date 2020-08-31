@@ -8,7 +8,7 @@ It helps developer to build client side decentralized applications
 
 ## Getting Start 
 
-```
+```ignore
 yarn add litentry-sdk
 
 import {hooks, query, ipfsApi} from 'litentry-sdk';
@@ -17,7 +17,7 @@ import {hooks, query, ipfsApi} from 'litentry-sdk';
 
 ## React Hooks for Litentry
 
-```typescript
+```typescript,ignore
 //Api loading State
 hooks.useApi(): boolean
 
