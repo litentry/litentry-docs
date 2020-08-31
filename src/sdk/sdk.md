@@ -17,7 +17,7 @@ import {hooks, query, ipfsApi} from 'litentry-sdk';
 
 ## React Hooks for Litentry
 
-```typescript,ignore
+```javascript,ignore
 //Api loading State
 hooks.useApi(): boolean
 
@@ -53,7 +53,7 @@ Identity data are stored in the IPFS network and cached in Litentry GraphQL data
 
 functions to query the latest data on IPFS:
 
-```typescript
+```javascript
 ipfsApi.getAddress(identity: string): Promise<string | null>
 
 ipfsApi.getData(identityId: string): Promise<string[]>
@@ -69,3 +69,4 @@ query.getData(identity: string): string
 query.setData(identity: string, data: string): string
 
 query.method(methodName: string, identity: string): string 
+```
