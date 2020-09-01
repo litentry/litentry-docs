@@ -11,4 +11,4 @@ The binary could successfully be compiled with the guide here and runned on Andr
 
 To keep the light client always living in the background, we need to use Service, but the policy changed from time to time.
 
-a minimal implementation: https://github.com/hanwencheng/LightClientServices , which supports users to download the binary of Flaming Fir, and run the service in the background.
+a minimal implementation: [https://github.com/hanwencheng/LightClientServices](https://github.com/hanwencheng/LightClientServices), which supports users to download the binary of Flaming Fir, and run the service in the background.
