@@ -14,7 +14,7 @@ IPFS is still under testing, graphql caching server could improve user experienc
 
 Query types
 
-```typescript
+```typescript,ignore
   type Record {
     ${recordKey}: String
   }
@@ -30,12 +30,13 @@ Query types
 
 Example for query `playgroundRecord` data of certain identity  
 
-```
+```ignore
 https://graphql.litentry.com:4000/graphql?query={getData(identityId:"0x992c710c7fba11ccd22a2fbfec1af6ea85d488807e63e10cbbd16256fcf95752"){playgroundRecord}}
 ```
 
 query IPFS address of certain identity
-```
+
+```ignore
 https://graphql.litentry.com:4000/graphql?query={determineAddress(identityId:"0x992c710c7fba11ccd22a2fbfec1af6ea85d488807e63e10cbbd16256fcf95752")}
 ```
 
