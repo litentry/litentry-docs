@@ -1,13 +1,4 @@
-# Architecture
-
-
-### The protocol is mainly constructed with following parts:
-
-* [Litentry Runtime](../runtime/runtime.md)
-* [Litentry Authenticator Mobile App](../mobile-app/mobile-app.md)
-* [SubAuth for Web Applications](../web-app/web-app.md)
-* [Litentry API Server](../api/api.md)
-
+# Protocol
 
 ### Concept of Decentralization
 

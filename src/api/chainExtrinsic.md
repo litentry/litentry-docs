@@ -8,8 +8,8 @@ fn issueToken(to, identity_id, cost, data, datatype, expired)
 
 Issue a token of an owned identity to certain account.
 
-* `to`: AccountID, the future owner of the token
-* `identity_id`: Hash, the id of the identity who issue the token
+* `to`: Hash, the receiver identity id
+* `identity_id`: Hash, the issuer identity id 
 * `cost`: Balance, the transfer cost of the token
 * `data`: byte, The data stored in the token
 * `data_type`: byte, the type of the data represent in byte

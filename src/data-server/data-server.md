@@ -1,22 +1,11 @@
-# Middleware
+# Litentry IPFS Data Center
 
-[API of data server](../api/dataServer.md)
+Github Repository: [https://github.com/litentry/litentry-ipfs-data-center](https://github.com/litentry/litentry-ipfs-data-center)
 
-Live Server: [http://112.125.25.18:3000](http://112.125.25.18:3000)
+Live Site on [https://data.litentry.com/](https://data.litentry.com/)
 
-The Litentry API behavior as a middle layer connects the runtime module and frontend applications for users.
+Litentry uses OrbitDB to offer an IPFS database support. In Data Center, user may check their identity related data and tokens.
 
-![API Design](./design.png)
+In the future we will implement Arweave and on-Chain key value storage.
 
-It mainly includes:
-
-* Event listener and off-chain caching server:  With cached data it reduces the query load on the blockchain, furthermore, it saves the caching data on the centralized database in order to improve the speed of application-based blockchain query, like Infura for Ethereum. A relay script server is also built here, to automatically trigger an event on periodically regarding block generation.
-
-* IPFS caching server: especially for the large data from IPFS, the server will caching the data to the server.
-
-* GraphQL validation and query server: validate the authorization tokens with HTTPS request for IoT devices or application.
-
-* Javascript binding library: The javascript binding library will directly connect the front-end applications with Blockchain, for example, React or React Native applications.
-
-![Info Server Architecture](./server.png)
-
+![IPFS Data Server](./dataServer1.png)

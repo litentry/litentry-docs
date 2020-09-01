@@ -10,9 +10,12 @@ It helps developer to build client side decentralized applications
 
 ```ignore
 yarn add litentry-sdk
+```
 
+Import for start using it, SDK mainly includes three part, `hooks`, `query` and `ipfsApi`
+
+```typescript
 import {hooks, query, ipfsApi} from 'litentry-sdk';
-
 ```
 
 ## React Hooks for Litentry
