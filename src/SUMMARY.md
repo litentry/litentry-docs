@@ -10,6 +10,7 @@
     * [Chain Types](./api/types.md)
 - [Litentry Authenticator](./mobile-app/mobile-app.md)
 - [SDK](./sdk/sdk.md)
+- [Litentry DApp Playground](./web-app/web-app.md)
 - [IPFS Data Center](./data-server/data-server.md)
 - [GraphQL Caching Server](./graphql/cache.md)
 - [Light Client Services](./light-client/light-client-services.md)
