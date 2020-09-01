@@ -11,5 +11,5 @@
 - [Litentry Authenticator](./mobile-app/mobile-app.md)
 - [SDK](./sdk/sdk.md)
 - [IPFS Data Center](./data-server/data-server.md)
-- [GraphQL Caching Center](./graphql/cache.md)
+- [GraphQL Caching Server](./graphql/cache.md)
 - [FAQ](./faq/faq.md)
