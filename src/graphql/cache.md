@@ -10,6 +10,8 @@ Currently, we provide a GraphQL caching server for recording event on the Litent
 
 IPFS is still under testing, graphql caching server could improve user experience for sync the data, it also caching anonymous data, and improve data query speed. 
 
+
+
 ![Graphql Server](./graphql1.png)
 
 Query types
