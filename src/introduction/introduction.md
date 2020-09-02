@@ -1,10 +1,8 @@
 # Introduction
 
-> Litentry is a second layer protocol and infrastructure based on Substrate. It focuses on identity data management, authorization and monetization.
-
 As we entrust safe-storage of our passwords and online activity data to third parties on the app-centric internet of today, we are often asked to comply with ambiguous and unfair privacy policies handing over control our own data. As a result our data is often harvested and used in ways we do not have a say in.
 
-Litentry Protocol is helping support change that in favour of a user-centric internet with the blockchain.
+**Litentry Protocol is helping support change that in favour of a user-centric internet with the blockchain.**
 
 Litentry is a fully decentralized identity authentication and user activity data management protocol. It is a secure and user-friendly alternative to Web 2.0 identity certification services (KYC), and it’s centralized user-data management facilities.   
 
@@ -14,9 +12,7 @@ Use of Substrate mobile lite-client support makes for architectural simplicity a
 
 Usage history is backed up to the user's storage enabling the individual to have full control over their data and seamlessly migrate their data between apps built with Litentry protocols.
 
-Litentry Apps include Litentry Authenticator offers wallet and ID features for user interaction.
-
-Litentry Modular Tool Libraries enables customised app development providing tooling modules for decentralized back-end identity validation and alias authentication. 
+Litentry Apps include Litentry Authenticator offers wallet and ID features for user interaction. The DApp Playground to showing the potentials and possibilities of a decentralized web. The Litentry Data Center shows user how to manager and analysis their data stored in decentralized database(IPFS).  
 
 Litentry provides tools to:
 
