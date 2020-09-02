@@ -2,7 +2,7 @@
 
 Github Repository: [https://github.com/litentry/litentry-authenticator](https://github.com/litentry/litentry-authenticator)
 
-Download Litentry Authenticator v1.1.1 Android APK [here](https://github.com/litentry/litentry-authenticator/releases/download/v1.1.1/app-release.apk)
+Download Litentry Authenticator v1.1.1 from [Android App Store](https://play.google.com/store/apps/details?id=com.litentryauthenticator)
 
 ### Mobile App Abstract
 Personal users would like to use an Wallet Application to manage all its identities, it could also become a Hub connected to different interest IoT devices. For example, directly buying the authorization or the data from other IoT devices. With the advantage of GPS of mobile phone, it could further integrate with LBS (Location Based Services).
