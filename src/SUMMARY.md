@@ -1,8 +1,9 @@
 # Summary
 
 - [Introduction](./introduction/introduction.md)
-    - [Architecture](./introduction/architecture.md)
     - [Protocol](./introduction/protocol.md)
+    - [Token Economy](./introduction/tokenEconomy.md)
+    - [Architecture](./introduction/architecture.md)
     - [Privacy Data Feeding](./introduction/privacyData.md)
 - [Runtime](./runtime/runtime.md)
     * [Chain Storage](./api/chainStorage.md)
