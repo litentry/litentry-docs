@@ -41,7 +41,7 @@ User data, including identity credential, should be storage in the a decentraliz
 #### Decentralization of identity authentication:
 The identity validator connect to the decentralized network periodically, and it could validate the authentication request independently. 
 
-####Decentralization of identity relationships: 
+#### Decentralization of identity relationships: 
 The relationship of data, and identity could be validated with cryptographic calculation, and it is also record in the decentralized network instead of regular centralized service like Certificate Authority used in HTTPS protocol. Different identities belong to owner are not discoverable, and protected by Schnorr25519 Algorithm. 
 
 #### Decentralization of Identity Data Allocation: 
