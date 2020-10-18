@@ -71,7 +71,7 @@ The list is send to the external Storage and the data is send back to the networ
 ## Incentivization
 
 Basics:
-LTT is the native token of Litentry Network, each block the network will give a fix amount reward to the identities owner of identities in identities pool.
+LIT is the native token of Litentry Network, each block the network will give a fix amount reward to the identities owner of identities in identities pool.
 In the staking finalization process, the value of the staking identity will be quantitated, so that the block stake reward will be shared according to identities staking value.
 
 #### For Identity Staker: 
