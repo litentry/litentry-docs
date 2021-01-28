@@ -1,51 +1,49 @@
 # Runtime
 
-Github Repository: [https://github.com/litentry/litentry-runtime](https://github.com/litentry/litentry-runtime)
+Github Repository: [https://github.com/litentry/litentry-node](https://github.com/litentry/litentry-node)
 
-As Pallet: [https://github.com/litentry/substrate/blob/master/bin/litentry/pallets/template/src/lib.rs](https://github.com/litentry/substrate/blob/master/bin/litentry/pallets/template/src/lib.rs)
+There are two pallets from litentry both account-linker and offchain-worker.
+
+[https://github.com/litentry/litentry-node/blob/develop/pallets/account-linker/src/lib.rs](https://github.com/litentry/litentry-node/blob/develop/pallets/account-linker/src/lib.rs)
+
+[https://github.com/litentry/litentry-node/blob/develop/pallets/offchain-worker/src/lib.rs](https://github.com/litentry/litentry-node/blob/develop/pallets/offchain-worker/src/lib.rs)
 
 ### Abstract
 
-The identity runtime protocol abstract all the persons and devices authorization scenario, includes three basic definitions:
+The identity runtime protocol link the all cross chain accounts to make an unique Litentry Identity. After accounts linked, Litentry user can trigger the asset claim via transaction. Litentry offchain worker will query your assets in other blockchain network, generate asset prove on-chain. Any Defi or other Dapp can use the information for their service:
 
-1. Identity Registry: a pre-defined key pair to present a person or a device.
+1. Account Linking: Litentry user sign the specific data with private key.
 
-2. Token: a non-fungible token issued by the identity.
+2. Asset Claim: Litentry user ask runtime to query its asset and generate prove.
 
-3. Data: the related identity data, like identity meta information and token specification. 
+3. Defi or other Dapp: Use the Litentry ID and its assets prove for their service. 
 
-![Identity Runtime Protocol](./runtime.png)
+### Stakeholders
+1. Litentry user: They register into Litentry network, can get the token incentive if their data queried by DeFi or other Dapps. Their information is protected with encryption and used in a secure runtime environment. 
+2. Defi: Litentry user's ID and their assets prove is critical factor to determine their financial service. 
+3. Dapps: Litentry user's cross chain information includes all activities in the whole cryptocurrency world. Litentry is the unique and unified entry point for their service.
+4. Litentry node runner: Except get the block produce incentive, they can also run offchain worker for cross chain asset query service. They will be rewarded if the query result they submitted is correct.
 
-### Examples:
+### Scenario:
 
-##### Person ID chain: 
+##### Defi: 
 
-* Identity Registry: crypto key pairs bind to national identity number;
+* Identity Registry: Litentry register and get Litentry ID with LIT token;
 
-* Token: a token created by the person, which could be used to validate the age;
+* Asset claim: If Litentry user also own assets in Bitcoin and Ethereum, they can link their account in Bitcoin and Ethereum at first. Then require Litentry to query their balance and create asset prove;
 
-* Data: the data of the person, e.g. birth date and place, gender, etc.
+* Defi service: Litentry provide the SDK and API for Defi application, Defi can access Litentry ID and assets prove.Base on these information, Difi can put in into their algorithm model, then decide the loan amount, interests and credits score.
 
-##### Lock Chain:
+##### Cross Chain Identity:
 
-* Locks Registry: crypto key pairs bind to the smart IoT lock;
+* Identity Registry: Litentry register and get Litentry ID with LIT token;
 
-* Token:  a token created by the lock, which could be used as an entry key.
+* Dapp: Dapp service can get the aggregated cross chain account information via Litentry Id. Then Dapp can avoid implement every API for different blockchain network;
 
-* Data: the definition of the token, e.g how many times could one token be used.
+##### Smart contract with credit score algorithm:
+* Identity Registry: Litentry register and get Litentry ID with LIT token;
 
-### Features
+* Smart contract: Litentry runtime provide raw data to smart contract deployed in Litentry network. Different smart contract can use diverse algorithm to compute the credits score. The applications can use one smart contract's data or use data source from different smart contracts to get their customer's financial profile.
 
-##### Cross Chain Validation
-
-Such a protocol could be easily combined for the Polkadot cross chain feature, thus could realize many new ideas:
-
-For example, the entry token on the lock chain need to be combined together with the personal ID chain, the entry token is only valid if the user's age is more than 18. The other personal data will not be exposed at the same time.
-
-##### Runtime Specific Data Operation:
-
-An IoT device manufacturer could have its own data operation functions, for example, it may harvest the data from all the temperature sensors and pay DOT to the sensor owners. 
-
-##### Data Linking
-
-The large data bind to the identity owner, i.e. person or devices, will be saved into an IPFS data server, the entry hash link will bind to their identity. The benefit of it is once the data updates, the old link will be also disabled. In order to always get the available data, others need to ask permission from the user. 
+## In the future
+The Litentry runtime is under very active development now. More pallets will be implemented and integrated into Litentry runtiime. Litentry network will acquire the slot of both Kusama and Polkadot. Cross chain ID aggregation and query will be realized.
