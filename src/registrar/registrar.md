@@ -32,7 +32,7 @@ The key components of the Litentry registrar are shown as follows. It mainly inc
 
 <p align="center"><img src="./registrar12.png" alt="litentryReggistrar" width="60%"/></p>
 
-<center>Figure 1.1 The Architecture of the Litentry Registrar</center>
+<p align="center">Figure 1.1 The Architecture of the Litentry Registrar</p>
 
 
 The Event Listener listens to all events coming from the Kusama chain. Once a JudgementRequested event is triggered on Kusama and the JudgementRequested indicates to use the Litentry registrar, the Event Listener service will invoke Validators starting the verification process. 
@@ -43,10 +43,10 @@ Once the user proves the ownership of the Email, Element, and Twitter account, t
 
 The Database service will temporarily store users’ data, e.g. Kusama account, email, Element, and Twitter account, so that we can recover services from an unpredictable crash. After completing the verification service, those data will be removed from the server permanently.
 
-<center>
-<img src="./registrar13.png" alt="litentryReggistrar" width="55%" height="60%"/></center>
-<center>Figure 1.2  The main Workflow of Verification process
-</center>
+<p align="center">
+<img src="./registrar13.png" alt="litentryReggistrar" width="55%" height="60%"/></p>
+<p align="center">Figure 1.2  The main Workflow of Verification process
+</p>
 
 
 ### Security and Availability
@@ -64,10 +64,10 @@ Firslty, users need to set their identity information on chain, then they can re
 ### Setting an On-chain Identity
 Go to the Accounts page in Polkadot-JS Apps. The easiest way to add the built-in fields is to click the vertical three dots next to one's account and select "Set on-chain identity".
 
-<center>
-<img src="./registrar1.png" alt="litentryReggistrar" width="75%" /></center>
-<center>Figure 1.3  Set Onchain Identity
-</center>
+<p align="center">
+<img src="./registrar1.png" alt="litentryReggistrar" width="75%" /></p>
+<p align="center">Figure 1.3  Set Onchain Identity
+</p>
 
 A popup will appear, offering the default fields.
 Currently, Litentry registrar only supports the following fields:
@@ -77,18 +77,19 @@ Currently, Litentry registrar only supports the following fields:
 * `twitter`
 * `element (formerly known as riot)`
 
-<center>
-<img src="./registrar2.png" alt="litentryReggistrar" width="75%" /></center>
-<center>Figure 1.3  Set Identity
-</center>
+<p align="center">
+<img src="./registrar2.png" alt="litentryReggistrar" width="75%" /></p>
+<p align="center">Figure 1.3  Set Identity
+</p>
+
 
 Once users have filled in the information, they would like to store on-chain, click `Set Identity` to
 submit the transaction.
 
 Now Users have set the identity information on-chain, but that is not verified yet, so they should see a little gray icon beside users name. 
-<center>
-<img src="./registrar3.png" alt="litentryReggistrar" width="50%" height="50%"/></center>
-<center>Figure 1.4 Account Example</center>
+<p align="center">
+<img src="./registrar3.png" alt="litentryReggistrar" width="50%" height="50%"/></p>
+<p align="center">Figure 1.4 Account Example</p>
 
 
 It is the time to interact with the Litentry's verification bot by submitting the judgment request to the Litentry Registrar.
@@ -96,9 +97,9 @@ It is the time to interact with the Litentry's verification bot by submitting th
 ### Judgement Request
 Go to Developer->Extrinsic and select your account to submit the identity -> requestJudgement(reg_index, max_fee) transaction. This will request the registrar to validate the information you set on-chain earlier. The reg_index is the index of the registrar. For Litentry, use XX. The max_fee is the amount KSM to pay the registrar. For Litentry use 0.01 KSM.
 
-<center>
-<img src="./registrar5.png" alt="litentryReggistrar" width="75%" /></center>
-<center>Figure 1.6 Judgement request</center>
+<p align="center">
+<img src="./registrar5.png" alt="litentryReggistrar" width="75%" /></p>
+<p align="center">Figure 1.6 Judgement request</p>
 
 
 </center>
@@ -109,12 +110,12 @@ Since we provide the Email, Element and Twitter verification in our registrar at
 #### Email Verification
 Users will receive an email called "Litentry Verification Service". Figure 1.7 is an example of email verification. Users only need to click the button "Verify Email Now" to complete proof of email address. Then they will receive another confirmation email that shows the email has been verified successfully.
 
+<p align="center">
+<img src="./email.png" alt="litentryReggistrar" width="50%"/></p>
 
-<center>
-<img src="./email.png" alt="litentryReggistrar" width="50%"/></center>
+<p align="center">Figure 1.7 Email Verification Example
+</p>
 
-<center>Figure 1.7 Email Verification Example
-</center>
 
 #### Element Verification
 
@@ -122,20 +123,22 @@ As for Element, an invitation will be sent from the bot named "litentry-bot". On
 
 
 
-<center>
-<img src="./riot.png" alt="litentryReggistrar" width="75%"/></center>
-<center>Figure 1.8 Element Verification Example
-</center>
+<p align="center">
+<img src="./riot.png" alt="litentryReggistrar" width="75%"/></p>
+<p align="center">Figure 1.8 Element Verification Example
+</p>
+
 
 #### Twitter Verification
 In the Twitter verification process, users need to follow the Litentry official registrar account, namely Litentry Registrar (@LitentryReg). Users could also set their accounts to receive any private conversation in their privacy settings. Otherwise, they cannot receive the message from the Litentry registrar. 
 Litentry Registrar will send a direct message associated with a verification link to the user. Once the verification link is clicked, 
 the verification of Twitter is completed, and you should receive a successful verification message. The following figure is an example of the Twitter account verification process.
 
-<center>
-<img src="./twitter.png" alt="litentryReggistrar" width="50%"/></center>
-<center>Figure 1.9 Twitter Verification Example
-</center>
+<p align="center">
+<img src="./twitter.png" alt="litentryReggistrar" width="50%"/></p>
+<p align="center">Figure 1.9 Twitter Verification Example
+</p>
+
 
 If everything has been verified successfully, you would see your account verification status has been marked as "reasonable" with a green tick icon on the account. And congratulations! Your identity should now show as a green "verified" checkmark on Polkadot-JS Apps.
 
