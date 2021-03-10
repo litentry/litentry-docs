@@ -57,7 +57,7 @@ On the other hand, the websocket (TCP connection) can be easily reset by the rem
 
 
 
-## User Interaction Highlight
+## User Interaction 
 
 Firslty, users need to set their identity information on chain, then they can request a registrar to provide identity judgement. Users declare a maximum fee and the registrar that they are willing to pay and verify for the judgement. After that the dedicated registrar can provide a judgement.
 
