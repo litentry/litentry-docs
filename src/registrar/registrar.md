@@ -30,12 +30,10 @@ At the current phase, Litentry registrar doesn’t support providing a judgement
 ## Implementation Details
 The key components of the Litentry registrar are shown as follows. It mainly includes Validators, Event Listener, ProvideJudgement Service and Database Service. Figure1.1 presents the architecture of the Litentry registrar, and Figure1.2 shows the main workflow of the registrar.
 
+<center><img src="./registrar12.png" alt="litentryReggistrar" width="60%"/></center>
 
-<center>
-<img src="./registrar12.png" alt="litentryReggistrar" width="75%"/></center>
+<center>Figure 1.1 The Architecture of the Litentry Registrar</center>
 
-<center>Figure 1.1 The Architecture of the Litentry Registrar
-</center>
 
 The Event Listener listens to all events coming from the Kusama chain. Once a JudgementRequested event is triggered on Kusama and the JudgementRequested indicates to use the Litentry registrar, the Event Listener service will invoke Validators starting the verification process. 
 
@@ -46,9 +44,10 @@ Once the user proves the ownership of the Email, Element, and Twitter account, t
 The Database service will temporarily store users’ data, e.g. Kusama account, email, Element, and Twitter account, so that we can recover services from an unpredictable crash. After completing the verification service, those data will be removed from the server permanently.
 
 <center>
-<img src="./registrar13.png" alt="litentryReggistrar" width="75%" height="80%"/></center>
+<img src="./registrar13.png" alt="litentryReggistrar" width="55%" height="60%"/></center>
 <center>Figure 1.2  The main Workflow of Verification process
 </center>
+
 
 ### Security and Availability
 We use JSON Web Token (JWT) to construct the verification protocol. A nonce and an ObjectID (comes from mongodb) are used to generate the JWT token to ensure security of the Litentry registrar. In this implementation, only the user who requests identity judgement, which implies his/her ownership of this Kusama account, will receive this encrypted token. Malicious users cannot construct this token because of an unknown encryption secret, since nonce and ObjectID  are encrypted. And the malicious user has no way to re-play the attacks. 
@@ -89,8 +88,8 @@ submit the transaction.
 Now Users have set the identity information on-chain, but that is not verified yet, so they should see a little gray icon beside users name. 
 <center>
 <img src="./registrar3.png" alt="litentryReggistrar" width="55%" height="60%"/></center>
-<center>Figure 1.4 Account Example
-</center>
+<center>Figure 1.4 Account Example</center>
+
 
 It is the time to interact with the Litentry's verification bot by submitting the judgment request to the Litentry Registrar.
 
@@ -99,7 +98,8 @@ Go to Developer->Extrinsic and select your account to submit the identity -> req
 
 <center>
 <img src="./registrar5.png" alt="litentryReggistrar" width="75%" /></center>
-<center>Figure 1.6 Judgement request
+<center>Figure 1.6 Judgement request</center>
+
 
 </center>
 
@@ -112,6 +112,7 @@ Users will receive an email called "Litentry Verification Service". Figure 1.7 i
 
 <center>
 <img src="./email.png" alt="litentryReggistrar" width="50%"/></center>
+
 <center>Figure 1.7 Email Verification Example
 </center>
 
