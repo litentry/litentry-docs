@@ -111,7 +111,7 @@ Users will receive an email called "Litentry Verification Service". Figure 1.7 i
 
 
 <center>
-<img src="./registrar6.png" alt="litentryReggistrar" width="50%"/></center>
+<img src="./email.png" alt="litentryReggistrar" width="50%"/></center>
 <center>Figure 1.7 Email Verification Example
 </center>
 
@@ -122,7 +122,7 @@ As for Element, an invitation will be sent from the bot named "litentry-bot". On
 
 
 <center>
-<img src="./registrar14.png" alt="litentryReggistrar" width="75%"/></center>
+<img src="./riot.png" alt="litentryReggistrar" width="75%"/></center>
 <center>Figure 1.8 Element Verification Example
 </center>
 
@@ -132,7 +132,7 @@ Litentry Registrar will send a direct message associated with a verification lin
 the verification of Twitter is completed, and you should receive a successful verification message. The following figure is an example of the Twitter account verification process.
 
 <center>
-<img src="./registrar15.png" alt="litentryReggistrar" width="50%"/></center>
+<img src="./twitter.png" alt="litentryReggistrar" width="50%"/></center>
 <center>Figure 1.9 Twitter Verification Example
 </center>
 
