@@ -1,3 +1,5 @@
+
+
 # Litentry Registrar
 
 Github Repository: [https://github.com/litentry/litentry-registrar](https://github.com/litentry/litentry-registrar)
@@ -78,17 +80,16 @@ Currently, Litentry registrar only supports the following fields:
 * `element (formerly known as riot)`
 
 <p align="center">
-<img src="./registrar2.png" alt="litentryReggistrar" width="75%" /></p>
+<img src="./registrar2.png" alt="litentryReggistrar" width="60%" /></p>
 <p align="center">Figure 1.3  Set Identity
 </p>
-
 
 Once users have filled in the information, they would like to store on-chain, click `Set Identity` to
 submit the transaction.
 
 Now Users have set the identity information on-chain, but that is not verified yet, so they should see a little gray icon beside users name. 
 <p align="center">
-<img src="./registrar3.png" alt="litentryReggistrar" width="50%" height="50%"/></p>
+<img src="./registrar3.png" alt="litentryReggistrar" width="40%" height="40%"/></p>
 <p align="center">Figure 1.4 Account Example</p>
 
 
@@ -124,7 +125,7 @@ As for Element, an invitation will be sent from the bot named "litentry-bot". On
 
 
 <p align="center">
-<img src="./riot.png" alt="litentryReggistrar" width="75%"/></p>
+<img src="./riot.png" alt="litentryReggistrar" width="50%"/></p>
 <p align="center">Figure 1.8 Element Verification Example
 </p>
 
