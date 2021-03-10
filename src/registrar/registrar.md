@@ -30,7 +30,7 @@ At the current phase, Litentry registrar doesn’t support providing a judgement
 ## Implementation Details
 The key components of the Litentry registrar are shown as follows. It mainly includes Validators, Event Listener, ProvideJudgement Service and Database Service. Figure1.1 presents the architecture of the Litentry registrar, and Figure1.2 shows the main workflow of the registrar.
 
-<center><img src="./registrar12.png" alt="litentryReggistrar" width="60%"/></center>
+<p align="center"><img src="./registrar12.png" alt="litentryReggistrar" width="60%"/></p>
 
 <center>Figure 1.1 The Architecture of the Litentry Registrar</center>
 
@@ -87,7 +87,7 @@ submit the transaction.
 
 Now Users have set the identity information on-chain, but that is not verified yet, so they should see a little gray icon beside users name. 
 <center>
-<img src="./registrar3.png" alt="litentryReggistrar" width="55%" height="60%"/></center>
+<img src="./registrar3.png" alt="litentryReggistrar" width="50%" height="50%"/></center>
 <center>Figure 1.4 Account Example</center>
 
 
