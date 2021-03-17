@@ -61,7 +61,7 @@ On the other hand, the websocket (TCP connection) can be easily reset by the rem
 
 ## User Interaction 
 
-Firslty, users need to set their identity information on chain, then they can request a registrar to provide identity judgement. Users declare a maximum fee and the registrar that they are willing to pay and verify for the judgement. After that the dedicated registrar can provide a judgement.
+In this section, we will introduce the user's identity verification step by step. Firstly, users need to set their identity information on the chain; they can request a registrar to provide identity judgment. Users declare a maximum fee and the registrar they are willing to pay and verify for the judgment. After that, the dedicated registrar can ascertain.
 
 ### Setting an On-chain Identity
 Go to the Accounts page in Polkadot-JS Apps. The easiest way to add the built-in fields is to click the vertical three dots next to one's account and select "Set on-chain identity".
@@ -96,7 +96,7 @@ Now Users have set the identity information on-chain, but that is not verified y
 It is the time to interact with the Litentry's verification bot by submitting the judgment request to the Litentry Registrar.
 
 ### Judgement Request
-Go to Developer->Extrinsic and select your account to submit the identity -> requestJudgement(reg_index, max_fee) transaction. This will request the registrar to validate the information you set on-chain earlier. The reg_index is the index of the registrar. For Litentry, use XX. The max_fee is the amount KSM to pay the registrar. For Litentry use 0.04 KSM.
+Go to Developer->Extrinsic and select your account to submit the identity -> requestJudgement(reg_index, max_fee) transaction. This will request the registrar to validate the information you set on-chain earlier. The reg_index is the index of the registrar. For Litentry, use XX. The max_fee is the amount KSM to pay the registrar. For Litentry Registrar use 0.04 KSM.
 
 <p align="center">
 <img src="./registrar5.png" alt="litentryReggistrar" width="75%" /></p>
