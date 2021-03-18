@@ -4,7 +4,7 @@
 
 Github Repository: [https://github.com/litentry/litentry-registrar](https://github.com/litentry/litentry-registrar)
 
-Litentry Registrar Support: \#litentry-registrar-support:matrix.org (Element) or [registrar-support@litentry.com](mailto:registrar-support@litentry.com)
+Litentry Registrar Support:  [Element Room](https://app.element.io/#/room/#litentry-registrar-support:matrix.org) or [registrar-support@litentry.com](mailto:registrar-support@litentry.com)
 
 ## Introduction 
 The user's account (public key, wallet address) on the blockchain can remain anonymous since it is loosely connected with the user's identity. However, a user with high reputation can be trusted by the community in the Polkadot ecosystem when he plans to be a validator or a councilor. In this document, we want to introduce a registrar service that focuses on automatic verifications, leveraging well-designed cryptographical challenges to further reduce human interventions. At the moment, Litentry registrar focuses on providing judgment with confidence for a user's `display name`, `email`, `twitter`, or `element name (previously called riot)`.  
@@ -27,7 +27,7 @@ If a user’s `display name`, `email`, `twitter`, or `element(previously called 
 
 As for LowQuality, it makes no sense to provide such a judgment for a requested user as a final judgement. Litentry registrar will automatically provide further hints to guide the user to update his identity. After all the information is verified correctly, the user will receive Reasonable. In this way, a user can not only save his fee (since we only provide one judgement for him) but also save his time (since Litentry registrar will point out imprecise or low quality identity timely).
 
-At the current phase, Litentry registrar doesn’t support providing a judgement level of KnownGood since it needs cooperation with third-part KYC services. We’d like to support it with well-known KYC organizations in the future.
+At the current phase, Litentry registrar doesn’t support providing a judgement level of KnownGood since it needs cooperation with third-party KYC services. We’d like to support it with well-known KYC organizations in the future.
 
 ## Implementation Details
 The key components of the Litentry registrar are shown as follows. It mainly includes Validators, Event Listener, ProvideJudgement Service and Database Service. Figure1.1 presents the architecture of the Litentry registrar, and Figure1.2 shows the main workflow of the registrar.
@@ -61,7 +61,7 @@ On the other hand, the websocket (TCP connection) can be easily reset by the rem
 
 ## User Interaction 
 
-In this section, we will introduce the user's identity verification step by step. Firstly, users need to set their identity information on the chain; they can request a registrar to provide identity judgment. Users declare a maximum fee and the registrar they are willing to pay and verify for the judgment. After that, the dedicated registrar can ascertain.
+In this section, we will introduce the user's identity verification process step by step. Firstly, users need to set their identity information on the chain. Then, they can request a registrar to provide identity judgment. Users declare a maximum fee and the registrar they are willing to pay and verify for the judgment. After that, the dedicated registrar can ascertain.
 
 ### Setting an On-chain Identity
 Go to the Accounts page in Polkadot-JS Apps. The easiest way to add the built-in fields is to click the vertical three dots next to one's account and select "Set on-chain identity".
@@ -96,7 +96,7 @@ Now Users have set the identity information on-chain, but that is not verified y
 It is the time to interact with the Litentry's verification bot by submitting the judgment request to the Litentry Registrar.
 
 ### Judgement Request
-Go to Developer->Extrinsic and select your account to submit the identity -> requestJudgement(reg_index, max_fee) transaction. This will request the registrar to validate the information you set on-chain earlier. The reg_index is the index of the registrar. For Litentry, use XX. The max_fee is the amount KSM to pay the registrar. For Litentry Registrar use 0.04 KSM.
+Go to Developer->Extrinsic and select your account to submit the identity -> requestJudgement(reg_index, max_fee) transaction. This will request the registrar to validate the information you set on-chain earlier. The reg_index is the index of the registrar. For Litentry, use XX. The max_fee is the amount KSM to pay the registrar. Litentry Registrar service fee is 0.04 KSM.
 
 <p align="center">
 <img src="./registrar5.png" alt="litentryReggistrar" width="75%" /></p>
@@ -144,7 +144,7 @@ the verification of Twitter is completed, and you should receive a successful ve
 If everything has been verified successfully, you would see your account verification status has been marked as "reasonable" with a green tick icon on the account. And congratulations! Your identity should now show as a green "verified" checkmark on Polkadot-JS Apps.
 
 ## Registrar Fee
-It is important to notice that no KSM are sent to the registrar at any time. You should NOT send or transfer funds. When calling the requestJudgement, the registrar fee will be locked and put aside. it will be transferred to the registrar only once it finishes its job. After all, we are using a trustless system. The judgement fee of Litentry Registrar is 0.04KSM.
+It is important to notice that no KSM are sent to the registrar at any time. You should NOT send or transfer funds. When calling the requestJudgement, the registrar fee will be locked and put aside. It will be transferred to the registrar only after the registrar finishes the judgment job. After all, we are using a trustless system. The judgement fee of Litentry Registrar is 0.04KSM.
 
 ### Reference
 1. https://wiki.polkadot.network/docs/en/learn-identity#kusama-registrars
