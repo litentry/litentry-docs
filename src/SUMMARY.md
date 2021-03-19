@@ -15,4 +15,6 @@
 - [IPFS Data Center](./data-server/data-server.md)
 - [GraphQL Caching Server](./graphql/cache.md)
 - [Light Client Services](./light-client/light-client-services.md)
+- [Litentry Registrar](./registrar/registrar.md)
 - [FAQ](./faq/faq.md)
+
