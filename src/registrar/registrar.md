@@ -6,6 +6,8 @@ Github Repository: [https://github.com/litentry/litentry-registrar](https://gith
 
 Litentry Registrar Support:  [Element Room](https://app.element.io/#/room/#litentry-registrar-support:matrix.org) or [registrar-support@litentry.com](mailto:registrar-support@litentry.com)
 
+Litentry Registrar index on Kusama is 4, and the service fee is 0.04KSM.
+
 ## Introduction 
 The user's account (public key, wallet address) on the blockchain can remain anonymous since it is loosely connected with the user's identity. However, a user with high reputation can be trusted by the community in the Polkadot ecosystem when he plans to be a validator or a councilor. In this document, we want to introduce a registrar service that focuses on automatic verifications, leveraging well-designed cryptographical challenges to further reduce human interventions. At the moment, Litentry registrar focuses on providing judgment with confidence for a user's `display name`, `email`, `twitter`, or `element name (previously called riot)`.  
 
@@ -96,7 +98,7 @@ Now Users have set the identity information on-chain, but that is not verified y
 It is the time to interact with the Litentry's verification bot by submitting the judgment request to the Litentry Registrar.
 
 ### Judgement Request
-Go to Developer->Extrinsic and select your account to submit the identity -> requestJudgement(reg_index, max_fee) transaction. This will request the registrar to validate the information you set on-chain earlier. The reg_index is the index of the registrar. For Litentry, use XX. The max_fee is the amount KSM to pay the registrar. Litentry Registrar service fee is 0.04 KSM.
+Go to Developer->Extrinsic and select your account to submit the identity -> requestJudgement(reg_index, max_fee) transaction. This will request the registrar to validate the information you set on-chain earlier. The reg_index is the index of the registrar. For Litentry, use 4. The max_fee is the amount KSM to pay the registrar. Litentry Registrar service fee is 0.04 KSM.
 
 <p align="center">
 <img src="./registrar5.png" alt="litentryReggistrar" width="75%" /></p>
