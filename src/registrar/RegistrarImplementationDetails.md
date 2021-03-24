@@ -4,11 +4,9 @@
 
 Github Repository: [https://github.com/litentry/litentry-registrar](https://github.com/litentry/litentry-registrar)
 
-## Introduction 
-
-In this section，we will introduce  Judgement level and implementation details of the Litentry registrar. At this stage, Litentry registrar takes four confidence levels as judgement levels that presented in next section. Furthermore, 
 
 
+In this document, we introduce the Judgement level and implementation details of the Litentry registrar. At this stage, the Litentry registrar takes four confidence levels as judgment levels. Furthermore, We’d like to support `KnownGood` with well-known KYC organizations in the future. In the implementation details section, the Litentry Registrar Architecture is presented that includes Validators, Event Listener, ProvideJudgement Service, and Database Service. We also introduce a secure method using JWT to construct the verification protocol.
 
 ## Judgement Levels & Criteria
 
