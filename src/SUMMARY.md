@@ -1,7 +1,6 @@
 # Summary
 
 - [Introduction](./introduction/introduction.md)
-  
     - [Protocol](./introduction/protocol.md)
     - [Token Economy](./introduction/tokenEconomy.md)
     - [Architecture](./introduction/architecture.md)
@@ -26,7 +25,6 @@
 
 - [Litentry Registrar ]()
    -  [How To Verifiy Your Identity](./registrar/registrar.md)
-   
    -  [Registrar Implementation Details](./registrar/RegistrarImplementationDetails.md)
    
 - [FAQ](./faq/faq.md)
