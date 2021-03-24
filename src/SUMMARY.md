@@ -23,8 +23,8 @@
 
 - [Light Client Services](./light-client/light-client-services.md)
 
-- [Litentry Registrar ]()
-   -  [How To Verifiy Your Identity](./registrar/registrar.md)
+- [Litentry Registrar](./registrar/registrar.md)
+   -  [How To Verifiy Your Identity](./registrar/HowToVerifyYourIdentity.md)
    -  [Registrar Implementation Details](./registrar/RegistrarImplementationDetails.md)
    
 - [FAQ](./faq/faq.md)
