@@ -24,7 +24,7 @@ Go to the Accounts page in Polkadot-JS Apps [Polkadot-JS Apps](https://polkadot.
 
 <p align="center">
 <img src="./registrar1.png" alt="litentryReggistrar" width="75%" /></p>
-<p align="center">Figure 1.3  Set Onchain Identity
+<p align="center">Figure 1.1  Set Onchain Identity
 </p>
 
 A popup will appear, offering the default fields.
@@ -39,7 +39,7 @@ Currently, Litentry registrar only supports the following fields:
 
 <p align="center">
 <img src="./registrar2.png" alt="litentryReggistrar" width="60%" /></p>
-<p align="center">Figure 1.3  Set Identity
+<p align="center">Figure 1.2  Set Identity
 </p>
 
 Once users have filled in the information, they would like to store on-chain, click `Set Identity` to submit the transaction.
@@ -48,7 +48,7 @@ Now Users have set the identity information on-chain, but that is not verified y
 
 <p align="center">
 <img src="./registrar3.png" alt="litentryReggistrar" width="40%" height="40%"/></p>
-<p align="center">Figure 1.4 Account Example</p>
+<p align="center">Figure 1.3 Account Example</p>
 
 
 It is the time to interact with the Litentry's verification bot by submitting the judgment request to the Litentry Registrar.
@@ -59,7 +59,7 @@ Go to Developer->Extrinsic and select your account to submit the identity -> req
 
 <p align="center">
 <img src="./registrar5.png" alt="litentryReggistrar" width="75%" /></p>
-<p align="center">Figure 1.6 Judgement request</p></center>
+<p align="center">Figure 1.4 Judgement request</p></center>
 
 
 
@@ -69,12 +69,12 @@ Since we provide the Email, Element and Twitter verification in our registrar at
 
 #### Email Verification
 
-Users will receive an email called "Litentry Verification Service". Figure 1.7 is an example of email verification. Users only need to click the button "Verify Email Now" to complete proof of email address. Then they will receive another confirmation email that shows the email has been verified successfully.
+Users will receive an email called "Litentry Verification Service". Figure 1.5 is an example of email verification. Users only need to click the button "Verify Email Now" to complete proof of email address. Then they will receive another confirmation email that shows the email has been verified successfully.
 
 <p align="center">
 <img src="./email.png" alt="litentryReggistrar" width="50%"/></p>
 
-<p align="center">Figure 1.7 Email Verification Example
+<p align="center">Figure 1.5 Email Verification Example
 </p>
 
 
@@ -86,7 +86,7 @@ As for Element, an invitation will be sent from the bot named "litentry-bot". On
 
 <p align="center">
 <img src="./riot.png" alt="litentryReggistrar" width="50%"/></p>
-<p align="center">Figure 1.8 Element Verification Example
+<p align="center">Figure 1.6 Element Verification Example
 </p>
 
 
@@ -98,7 +98,7 @@ the verification of Twitter is completed, and you should receive a successful ve
 
 <p align="center">
 <img src="./twitter.png" alt="litentryReggistrar" width="50%"/></p>
-<p align="center">Figure 1.9 Twitter Verification Example
+<p align="center">Figure 1.7 Twitter Verification Example
 </p>
 
 
