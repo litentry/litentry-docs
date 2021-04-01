@@ -6,13 +6,13 @@ This library provides useful functions to interact with the state on Litentry an
 
 It helps developer to build client side decentralized applications
 
-## Getting Start 
+## Getting Started
 
 ```ignore
 yarn add litentry-sdk
 ```
 
-Import for start using it, SDK mainly includes three part, `hooks`, `query` and `ipfsApi`
+Import litentry-sdk to start using it, SDK mainly includes three part, `hooks`, `query` and `ipfsApi`
 
 ```typescript
 import {hooks, query, ipfsApi} from 'litentry-sdk';
@@ -44,17 +44,17 @@ hooks.getLastIdentity(account: string): Promise<string | void>
 
 // react hooks for using native extrinsics on Litentry
 hooks.useExtrinsics(): {
-  	registerIdentity: SubmittableExtrinsicFunction<'promise'>;
-  	issueToken: SubmittableExtrinsicFunction<'promise'>;
+	registerIdentity: SubmittableExtrinsicFunction<'promise'>;
+	issueToken: SubmittableExtrinsicFunction<'promise'>;
 }
 
 ```
 
 ## Identity Data Query
 
-Identity data are stored in the IPFS network and cached in Litentry GraphQL data server. 
+Identity data is stored in the IPFS network and cached in Litentry GraphQL data server.
 
-functions to query the latest data on IPFS:
+These are the functions to query the latest data on IPFS:
 
 ```typescript
 ipfsApi.getAddress(identity: string): Promise<string | null>
@@ -64,7 +64,7 @@ ipfsApi.getData(identityId: string): Promise<string[]>
 ipfsApi.registerIdentity(identity: string): void
 ```
 
-functions to construct query http request  from GraphQL:
+and the functions to construct query http request from GraphQL:
 
 ```typescript
 query.getData(identity: string): string
