@@ -4,7 +4,7 @@ live site on [https://dapp.litentry.com/](https://dapp.litentry.com/)
 
 Repository: [https://github.com/litentry/litentry-web](https://github.com/litentry/litentry-web)
 
-On how to start with Litentry DApp Playground please refer to [this article](https://www.litentry.com/post/play-litentry-dapps-with-ipfs-part-1).
+For more information on how to start with Litentry DApp Playground please refer to [this article](https://www.litentry.com/post/play-litentry-dapps-with-ipfs-part-1).
 
 Litentry Playground is a hub of decentralized web app applications to achieve a Substrate based authentication.
 
@@ -26,11 +26,11 @@ More about the Authentication (Sign in Process):
 #### The Implementation of Litentry Authentication
 
 1. User on a third party website and click login with Litentry Button
-2. A preset account will come if user has logged before in the computer, or a QR scanner comes out for user to scan his/her Substrate account QR code.
-3. At this time the third party website send a transaction to Litentry network with a challenge string and its receiver server address. And sign a JWT with challenge and server address embedded in it.
-4. User now has to open the mobile app (best integrated with Substrate light client), it has watched the event of the auth request, and then sign the JWT with its private key and then send the signed double signed JWT to the server address.
- 5. The server proved the token received by the user and then finish the logging process.
- 6. After the usage of the third party web application or service, third party allocated the user browsing data/history and query the user's data resolver address, then user data is send back to the resolver and being process and harvested into user's own database.
+2. A preset account will come if user has logged on with Litentry before in this computer or device, or a QR scanner will come up for user to scan his/her Substrate account QR code.
+3. At this time the third party website will send a transaction to Litentry network with a challenge string and its receiver server address. <mark>And sign a JWT with challenge and server address embedded in it.</mark>
+4. User now has to open the mobile app <mark>(best integrated with Substrate light client)</mar>. The mobile app has detected the auth request event, the user will authorise the JWT in the mobile application (this signs the transaction using the users private key and then sends the double signed JWT to the server address. <mark>for me it is not clear what a JWT is</mark>
+5. The server validates the token received from the user and then finishes the logging process.
+6. After the usage of the third party web application or service, third party allocated the user browsing data/history and query the user's data resolver address, then user data is send back to the resolver and being process and harvested into user's own database.
 
 #### Sign in to DApp Playground
 
