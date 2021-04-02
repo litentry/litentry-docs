@@ -6,7 +6,7 @@ There are two pallets from litentry both account-linker and offchain-worker.
 <!--- <mark>*Neither of these pallets exist on this path*</mark> The account-linker and offchain-worker are moved to the Litnetry pallets repo -->
 [https://github.com/litentry/litentry-pallets/blob/dev/pallets/account-linker/src/lib.rs](https://github.com/litentry/litentry-pallets/blob/dev/pallets/account-linker/src/lib.rs)
 
-[https://github.com/litentry/litentry-pallets/blob/dev/pallets/offchain-worker/src/lib.rs](https://github.com/litentry/litentry-pallets/blob/dev/pallets/offchain-worker/src/lib.rs
+[https://github.com/litentry/litentry-pallets/blob/dev/pallets/offchain-worker/src/lib.rs](https://github.com/litentry/litentry-pallets/blob/dev/pallets/offchain-worker/src/lib.rs)
 
 ### Abstract
 
