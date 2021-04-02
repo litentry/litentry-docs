@@ -4,14 +4,14 @@
 
 Litentry Registrar Support:  [Element Room](https://app.element.io/#/room/#litentry-registrar-support:matrix.org) or [registrar-support@litentry.com](mailto:registrar-support@litentry.com)
 
-<mark>Litentry Registrar index on Kusama is 4, and the service fee is 0.04KSM.*I have not idea what this means
-What is the registrar index on Kusama and what is the relevance of it being 4. How do i pay the KSM service fee? </mark>
+Litentry Registrar index on Kusama is 4, and the service fee is 0.04KSM. <!--- <mark>*I have not idea what this means
+What is the registrar index on Kusama and what is the relevance of it being 4. How do i pay the KSM service fee? </mark> -->
 
 **In the Twitter verification process, users need to follow the Litentry official registrar account, namely Litentry Registrar (@LitentryReg).**
 
 ## Introduction
 
-The user's account (public key, wallet address) on the blockchain can remain anonymous since it is loosely connected with the user's identity. However, a user with high reputation can be trusted by the community in the Polkadot ecosystem when he plans to be a validator or a councilor. In this document, we want to introduce a registrar service that focuses on automatic verifications, leveraging well-designed cryptographical challenges to further reduce human interventions. At the moment, Litentry registrar focuses on providing judgment with confidence for a user's `display name`, `email`, `twitter`, or `element name (previously called riot)`. <mark>by judgment I assume you mean that you are validating that the users, email, twitter handle and element handle are all correctly associated with the user?</mark>
+The user's account (public key, wallet address) on the blockchain can remain anonymous since it is loosely connected with the user's identity. However, a user with high reputation can be trusted by the community in the Polkadot ecosystem when he plans to be a validator or a councilor. In this document, we want to introduce a registrar service that focuses on automatic verifications, leveraging well-designed cryptographical challenges to further reduce human interventions. At the moment, Litentry registrar focuses on providing judgment with confidence for a user's `display name`, `email`, `twitter`, or `element name (previously called riot)`. <!--- <mark>by judgment I assume you mean that you are validating that the users, email, twitter handle and element handle are all correctly associated with the user?</mark> Yes, judgment means providing validation -->
 
 ## User Interaction
 
