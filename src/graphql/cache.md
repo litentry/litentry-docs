@@ -1,16 +1,14 @@
 # Middleware
 
-[API of data server](dataServer.md)
+<mark>[API of data server](dataServer.md) *I cannot find the dataServer.md*</mark>
 
-Live Server: [https://graphql.litentry.com:4000/playground](https://graphql.litentry.com:4000/playground)
+<mark>Live Server: [https://graphql.litentry.com:4000/playground](https://graphql.litentry.com:4000/playground)*I am getting an error from this link*</mark>
 
 Github Repository: [https://github.com/litentry/litentry-ipfs-graphql](https://github.com/litentry/litentry-ipfs-graphql)
 
 Currently, we provide a GraphQL caching server for recording event on the Litentry blockchain and caching data from IPFS.
 
-IPFS is still under testing, graphql caching server could improve user experience for sync the data, it also caching anonymous data, and improve data query speed. 
-
-
+IPFS is still under testing, graphql caching server could improve user experience for sync the data, it also caching anonymous data, and improve data query speed.
 
 ![Graphql Server](./graphql1.png)
 
@@ -41,4 +39,3 @@ query IPFS address of certain identity
 ```ignore
 https://graphql.litentry.com:4000/graphql?query={determineAddress(identityId:"0x992c710c7fba11ccd22a2fbfec1af6ea85d488807e63e10cbbd16256fcf95752")}
 ```
-
