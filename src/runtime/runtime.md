@@ -3,10 +3,10 @@
 Github Repository: [https://github.com/litentry/litentry-node](https://github.com/litentry/litentry-node)
 
 There are two pallets from litentry both account-linker and offchain-worker.
-<mark>*Neither of these pallets exist on this path*</mark>
-[https://github.com/litentry/litentry-node/blob/develop/pallets/account-linker/src/lib.rs](https://github.com/litentry/litentry-node/blob/develop/pallets/account-linker/src/lib.rs)
+<!--- <mark>*Neither of these pallets exist on this path*</mark> The account-linker and offchain-worker are moved to the Litnetry pallets repo -->
+[https://github.com/litentry/litentry-pallets/blob/develop/pallets/account-linker/src/lib.rs](https://github.com/litentry/litentry-pallets/blob/develop/pallets/account-linker/src/lib.rs)
 
-[https://github.com/litentry/litentry-node/blob/develop/pallets/offchain-worker/src/lib.rs](https://github.com/litentry/litentry-node/blob/develop/pallets/offchain-worker/src/lib.rs)
+[https://github.com/litentry/litentry-pallets/blob/develop/pallets/offchain-worker/src/lib.rs](https://github.com/litentry/litentry-pallets/blob/develop/pallets/offchain-worker/src/lib.rs)
 
 ### Abstract
 
@@ -21,7 +21,7 @@ The identity runtime protocol links all the cross chain accounts to make an uniq
 ### Stakeholders
 
 1. Litentry user: Users register with the Litentry network, they can get the token incentive if their data is queried by a DeFi or other Dapps. Their information is protected with encryption and used in a secure runtime environment.
-2. Defi: Litentry user's ID and their assets proof is a critical factor to determine their financial service.<mark>*I have no idea what this is saying*</mark>
+2. Defi: With Litentry identity, users can view their personal information, including credit and on-chain reputation. This information can be applied to mortgage rates and credit borrowing in DeFi lending.<!-- <mark>*I have no idea what this is saying*</mark> update the content-->
 3. Dapps: Litentry user's cross chain information includes all activities in the whole cryptocurrency world. Litentry is the unique and unified entry point for their service.
 4. Litentry node runner: They will earn the block production incentive and they can run offchain workers for cross chain asset query service. They will be rewarded if the query results they submit are correct.
 
@@ -29,7 +29,7 @@ The identity runtime protocol links all the cross chain accounts to make an uniq
 
 ##### Defi:
 
-Litentry can be used to provide a full credit history for a user. this credit history can be used in a Defi application or service for borrowing. By using credit histories, a full access to the users history and their assets a lending application can lend money with less collateral thus reducing the need for the current scenario where extremely overcollateralised loans are given. This would work as follows.
+Litentry can be used to provide a full credit history for a user. This credit history can be used in a Defi application or service for borrowing. By using credit histories, a full access to the users history and their assets a lending application can lend money with less collateral thus reducing the need for the current scenario where extremely overcollateralised loans are given. This would work as follows.
 
 * Asset claim: If Litentry user also owns assets in Bitcoin and Ethereum, they can link their account from Bitcoin and Ethereum. Then they request Litentry to query their balance and create asset proofs;
 
