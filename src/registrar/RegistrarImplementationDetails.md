@@ -1,10 +1,7 @@
 
-
 # Implementation Details
 
 Github Repository: [https://github.com/litentry/litentry-registrar](https://github.com/litentry/litentry-registrar)
-
-
 
 In this document, we introduce the Judgement level and implementation details of the Litentry registrar. At this stage, the Litentry registrar takes four confidence levels as judgment levels. Furthermore, We’d like to support `KnownGood` with well-known KYC organizations in the future. In the implementation details section, the Litentry Registrar Architecture is presented that includes Validators, Event Listener, ProvideJudgement Service, and Database Service. We also introduce a secure method using JWT to construct the verification protocol.
 
@@ -28,7 +25,8 @@ As for LowQuality, it makes no sense to provide such a judgment for a requested 
 
 At the current phase, Litentry registrar doesn’t support providing a judgement level of KnownGood since it needs cooperation with third-party KYC services. We’d like to support it with well-known KYC organizations in the future.
 
-## Implementation Details
+## Registrar Architecture
+
 The key components of the Litentry registrar are shown as follows. It mainly includes Validators, Event Listener, ProvideJudgement Service and Database Service. Figure1.1 presents the architecture of the Litentry registrar, and Figure1.2 shows the main workflow of the registrar.
 
 <p align="center"><img src="./registrar12.png" alt="litentryReggistrar" width="60%"/></p>
@@ -49,24 +47,12 @@ The Database service will temporarily store users’ data, e.g. Kusama account, 
 <p align="center">Figure 1.2  The main Workflow of Verification process
 </p>
 
-
 ### Security and Availability
+
 We use JSON Web Token (JWT) to construct the verification protocol. A nonce and an ObjectID (comes from mongodb) are used to generate the JWT token to ensure security of the Litentry registrar. In this implementation, only the user who requests identity judgement, which implies his/her ownership of this Kusama account, will receive this encrypted token. Malicious users cannot construct this token because of an unknown encryption secret, since nonce and ObjectID  are encrypted. And the malicious user has no way to re-play the attacks. 
 
 On the other hand, the websocket (TCP connection) can be easily reset by the remote peer due to long-time idle. In this situation, the events from the Kusama would be never captured since the disconnection between them. To prevent this situation, we capture the events from the underlying websocket connection and reconnect to the Kusama automatically whenever it’s reset by the peer.
 
+### References
 
-
-### Reference
-1. https://wiki.polkadot.network/docs/en/learn-identity#kusama-registrars
-
-
-
-
-
-
-
-
-
-
-
+1. <https://wiki.polkadot.network/docs/en/learn-identity#kusama-registrars>
