@@ -22,10 +22,9 @@
 - [GraphQL Caching Server](./graphql/cache.md)
 
 - [Light Client Services](./light-client/light-client-services.md)
-<mark>
+
 - [Litentry Registrar](./registrar/HowToVerifyYourIdentity.md)
    -  [How To Verifiy Your Identity](./registrar/HowToVerifyYourIdentity.md)
    -  [Registrar Implementation Details](./registrar/RegistrarImplementationDetails.md)
-*The Litentry Registrar and the How to veryify your identity refer to the same md file*</mark>
    
 - [FAQ](./faq/faq.md)
