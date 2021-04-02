@@ -1,10 +1,10 @@
 # Litentry DApp Playground
 live site on [https://dapp.litentry.com/](https://dapp.litentry.com/)
-<mark>I could not use the Dapp - the guide returned a 404 error and the QRCode did not show in the Sign in form. The litentry data center, litentry authenticator and litentry graphql links all returned errors as well</mark>
+<!--- <mark>I could not use the Dapp - the guide returned a 404 error and the QRCode did not show in the Sign in form. The litentry data center, litentry authenticator and litentry graphql links all returned errors as well</mark> -->
 
 Repository: [https://github.com/litentry/litentry-web](https://github.com/litentry/litentry-web).
 
-For more information on how to start with Litentry DApp Playground please refer to [this article](https://www.litentry.com/post/play-litentry-dapps-with-ipfs-part-1).<mark>This article does not exist at this link</mark>
+For more information on how to start with Litentry DApp Playground please refer to [this article](https://www.litentry.com/post/play-litentry-dapps-with-ipfs-part-1).<!--- <mark>This article does not exist at this link</mark> -->
 
 Litentry Playground is a hub for decentralized web app applications to achieve Substrate based authentication.
 
