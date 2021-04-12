@@ -1,8 +1,6 @@
 
 # How To Verify Your Identity
 
-Litentry Registrar Support:  [Element Room](https://app.element.io/#/room/#litentry-registrar-support:matrix.org) or [registrar-support@litentry.com](mailto:registrar-support@litentry.com)
-
 Litentry Registrar index on Kusama is 4, and the service fee is 0.04KSM. <!--- <mark>*I have not idea what this means
 What is the registrar index on Kusama and what is the relevance of it being 4. How do i pay the KSM service fee? </mark> -->
 
@@ -84,4 +82,4 @@ It's important to notice that no KSM is sent to our registrar at any time before
 
 ### Support
 
-It is important to notice that no KSM are sent to the registrar at any time. You should NOT send or transfer funds. When calling the requestJudgement, the registrar fee will be locked and put aside. It will be transferred to the registrar only after the registrar finishes the judgment job. After all, we are using a trustless system. The judgement fee of Litentry Registrar is 0.04KSM.
+If you have any question, contact us via Element Room or registrar-support@litentry.com
