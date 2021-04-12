@@ -1,11 +1,6 @@
 
 # How To Verify Your Identity
 
-Litentry Registrar index on Kusama is 4, and the service fee is 0.04KSM. <!--- <mark>*I have not idea what this means
-What is the registrar index on Kusama and what is the relevance of it being 4. How do i pay the KSM service fee? </mark> -->
-
-**In the Twitter verification process, users need to follow the Litentry official registrar account, namely Litentry Registrar (@LitentryReg).**
-
 ## Introduction
 
 While the anonymity Web3 provides has a great advantage in user privacy, revealing partial personal information can help gain a higher reputation and trust in the Polkadot ecosystem. This document introduces a registrar service that is fully automatic, leveraging cryptographical design to eliminate human interventions. Litentry registrar focuses on providing judgment for a user's `display name`, `email`, `twitter`, or `element name (previously called riot)`while preserving user privacy.
