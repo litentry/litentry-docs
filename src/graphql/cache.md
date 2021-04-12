@@ -1,8 +1,6 @@
 # Middleware
 
-<mark>[API of data server](dataServer.md) *I cannot find the dataServer.md*</mark>
-
-<mark>Live Server: [https://graphql.litentry.com:4000/playground](https://graphql.litentry.com:4000/playground)*I am getting an error from this link*</mark>
+Live Server: [https://graphql.litentry.com:4000/playground](https://graphql.litentry.com:4000/playground)
 
 Github Repository: [https://github.com/litentry/litentry-ipfs-graphql](https://github.com/litentry/litentry-ipfs-graphql)
 
