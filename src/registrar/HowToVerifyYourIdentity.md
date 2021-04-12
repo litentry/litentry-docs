@@ -1,108 +1,80 @@
 
-
 # How To Verify Your Identity
-
-Litentry Registrar Support:  [Element Room](https://app.element.io/#/room/#litentry-registrar-support:matrix.org) or [registrar-support@litentry.com](mailto:registrar-support@litentry.com)
-
-<mark>Litentry Registrar index on Kusama is 4, and the service fee is 0.04KSM.*I have not idea what this means
-What is the registrar index on Kusama and what is the relevance of it being 4. How do i pay the KSM service fee? </mark>
-
-**In the Twitter verification process, users need to follow the Litentry official registrar account, namely Litentry Registrar (@LitentryReg).**
 
 ## Introduction
 
-The user's account (public key, wallet address) on the blockchain can remain anonymous since it is loosely connected with the user's identity. However, a user with high reputation can be trusted by the community in the Polkadot ecosystem when he plans to be a validator or a councilor. In this document, we want to introduce a registrar service that focuses on automatic verifications, leveraging well-designed cryptographical challenges to further reduce human interventions. At the moment, Litentry registrar focuses on providing judgment with confidence for a user's `display name`, `email`, `twitter`, or `element name (previously called riot)`. <mark>by judgment I assume you mean that you are validating that the users, email, twitter handle and element handle are all correctly associated with the user?</mark>
+While the anonymity Web3 provides has a great advantage in user privacy, revealing partial personal information can help gain a higher reputation and trust in the Polkadot ecosystem. This document introduces a registrar service that is fully automatic, leveraging cryptographical design to eliminate human interventions. Litentry registrar focuses on providing judgment for a user's `display name`, `email`, `twitter`, or `element name (previously called riot)`while preserving user privacy.
 
-## User Interaction
+We will walk through the identity verification process step by step: First, users need to set their identity information on the chain; Second, they may request the registrar to verify the identity. Users will enter a maximum fee they are willing to pay for the service. After that, the dedicated registrar can ascertain.
 
-In this section, we will introduce the user's identity verification process step by step. Firstly, users need to set their identity information on the chain. Then, they can request a registrar to provide identity judgment. Users declare a maximum fee and the registrar they are willing to pay and verify for the judgment. After that, the dedicated registrar can ascertain.
+### Step 1: Set an on-chain identity
 
-### Setting an On-chain Identity
-
-Go to the Accounts page in Polkadot-JS Apps [Polkadot-JS Apps](https://polkadot.js.org/). The easiest way to add the built-in fields is to click the vertical three dots next to one's account and select "Set on-chain identity".
+* Go to the 'Accounts' session on [Polkadot-JS Apps](https://polkadot.js.org/apps)
+* Make sure you're in the Kusama network by looking at the top left of the page. If not, click on the toggle to switch
+* On the accounts list, click on the dots icon on the right side of your selected account and click `Set on-chain identity`.
 
 <p align="center">
 <img src="./registrar1.png" alt="litentryRegistrar" width="75%" /></p>
-<p align="center">Figure 1.1  Set Onchain Identity
-</p>
+<p align="center">Figure 1.1  Set on-chain Identity</p>
 
-A popup will appear, offering the default fields.
-Currently, Litentry registrar only supports the following fields:
-
-* `display name`
-* `email`
-* `twitter`
-* `element (formerly known as riot)`
-
-**In the Twitter verification process, users need to follow the Litentry official registrar account, namely Litentry Registrar (@LitentryReg).Otherwise, they cannot receive the message from the Litentry registrar. **
+* You'll see a popup window of 'register identity'. Click to turn on include field of display name , email , twitter , riot(also known as element) and enter your information. Once you finish, click Set Identity to submit the transaction.
 
 <p align="center">
 <img src="./registrar2.png" alt="litentryReggistrar" width="60%" /></p>
-<p align="center">Figure 1.2  Set Identity
-</p>
-
-Once users have filled in the information, they would like to store on-chain, click `Set Identity` to submit the transaction.
-
-Now Users have set the identity information on-chain, but that is not verified yet, so they should see a little gray icon beside users name. 
-
+<p align="center">Figure 1.2  Submit Identity information</p>
+Now you have successfully submitted an identity! Since your information is not verified yet, you will see a ⚪️ next to your username.
 <p align="center">
 <img src="./registrar3.png" alt="litentryReggistrar" width="40%" height="40%"/></p>
-<p align="center">Figure 1.3 Account Example</p>
+<p align="center">Figure 1.3 Unverified Account</p>
 
+### Step 2: [Judgement Request](https://docs.litentry.com/registrar/HowToVerifyYourIdentity.html#judgement-request)
 
-It is the time to interact with the Litentry's verification bot by submitting the judgment request to the Litentry Registrar.
+To request the registrar to validate your on-chain information:
 
-### Judgement Request
-
-Go to Developer->Extrinsic and select your account to submit the identity -> requestJudgement(reg_index, max_fee) transaction. This will request the registrar to validate the information you set on-chain earlier. The reg_index is the index of the registrar. For Litentry, use 4. The max_fee is the amount KSM to pay the registrar. Litentry Registrar service fee is 0.04 KSM.
-
+* Go to Developer->Extrinsic, select your account.
+* Select `identity` under `submit the following extrinsic`, and `requestJudgement(reg_index, max_fee)` transaction.
+* Enter '4' for `reg_index`(index of the registrar)
+* Enter '0.04' KSM for the service fee.
+* Click on `Submit transaction`
 <p align="center">
 <img src="./registrar5.png" alt="litentryReggistrar" width="75%" /></p>
-<p align="center">Figure 1.4 Judgement request</p></center>
+<p align="center">Figure 1.4 Judgement Request</p></center>
 
+### Step 3: [Email Verification](https://docs.litentry.com/registrar/HowToVerifyYourIdentity.html#email-verification)
 
-
-### Verification Services
-
-Since we provide the Email, Element and Twitter verification in our registrar at this moment, you will receive verification requests from those platforms. 
-
-#### Email Verification
-
-Users will receive an email called "Litentry Verification Service". Figure 1.5 is an example of email verification. Users only need to click the button "Verify Email Now" to complete proof of email address. Then they will receive another confirmation email that shows the email has been verified successfully.
+You should receive a verification email from Litentry. Click on "Verify Email Now" to complete the verification process (see figure 1.5). After that, you will receive another email that confirms the verification. 
 
 <p align="center">
 <img src="./email.png" alt="litentryReggistrar" width="50%"/></p>
+<p align="center">Figure 1.5 Email Verification Example</p>
 
-<p align="center">Figure 1.5 Email Verification Example
-</p>
+### Step 4: [Element Verification](https://docs.litentry.com/registrar/HowToVerifyYourIdentity.html#element-verification) (Optional)
 
-
-#### Element Verification
-
-As for Element, an invitation will be sent from the bot named "litentry-bot". Once the user accepts the invitation, "litentry-bot" will send a verification link. Users only need to click the link to complete verification of the element account. When it proves the user is the account owner, they will receive a confirmation message such as "Verified successfully" (see the figure below). 
-
-
+* An invitation will be sent from "litentry-bot" on Element, accept the invitation
+* Click on the verification link from "litentry-bot" to complete verification of the element account. Once the verification process is completed, you will receive a confirmation message (see figure 1.6).
 
 <p align="center">
 <img src="./riot.png" alt="litentryReggistrar" width="50%"/></p>
 <p align="center">Figure 1.6 Element Verification Example
 </p>
 
+### Step 5: [Twitter Verification](https://docs.litentry.com/registrar/HowToVerifyYourIdentity.html#twitter-verification) (Optional)
 
-#### Twitter Verification
-
-In the Twitter verification process, users need to follow the Litentry official registrar account, namely Litentry Registrar (@LitentryReg). Users could also set their accounts to receive any private conversation in their privacy settings. Otherwise, they cannot receive the message from the Litentry registrar. 
-Litentry Registrar will send a direct message associated with a verification link to the user. Once the verification link is clicked, 
-the verification of Twitter is completed, and you should receive a successful verification message. The following figure is an example of the Twitter account verification process.
-
+* Follow **@LitentryReg** on Twitter
+* Make sure your account is open to private messages in your privacy settings. Otherwise, the verification message will not go through.
+* You'll receive a verification link on DM from @LitentryReg. Click on the link to complete verification of your Twitter account. Once it is completed, you will receive a confirmation message (see figure 1.7).
 <p align="center">
 <img src="./twitter.png" alt="litentryReggistrar" width="50%"/></p>
-<p align="center">Figure 1.7 Twitter Verification Example
-</p>
+<p align="center">Figure 1.7 Twitter Verification Example</p>
 
+Once everything is successfully verified, you will see your account status become "reasonable" with an ✅ icon. Congratulations - Your identity is now verified on Polkadot-JS Apps!
 
-If everything has been verified successfully, you would see your account verification status has been marked as "reasonable" with a green tick icon on the account. And congratulations! Your identity should now show as a green "verified" checkmark on Polkadot-JS Apps.
+### Register Fee
 
-## Registrar Fee
+The judgment fee of the Litentry Registrar is 0.04KSM.
 
-It is important to notice that no KSM are sent to the registrar at any time. You should NOT send or transfer funds. When calling the requestJudgement, the registrar fee will be locked and put aside. It will be transferred to the registrar only after the registrar finishes the judgment job. After all, we are using a trustless system. The judgement fee of Litentry Registrar is 0.04KSM.
+It's important to notice that no KSM is sent to our registrar at any time before the judgment is completed. You should NOT send funds to our account directly. When calling `requestJudgement`, the registrar fee will be locked and put aside. It will be transferred to the registrar only after the registrar finishes its job.
+
+### Support
+
+If you have any question, contact us via [Element Room](https://app.element.io/#/room/#litentry-registrar-support:matrix.org) or [registrar-support@litentry.com](mailto:registrar-support@litentry.com)
