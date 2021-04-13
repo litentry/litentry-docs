@@ -12,4 +12,4 @@ Litentry is a registrar in polkadot parlance (an atester in self sovereign ident
 
 Polkadot provides a service that allows participants to add personal information such as email addresses and twitter accounts to their on-chain accounts. The user can then ask for verification of this information by a registrar. Litentry is a registrar. A user can request a registrar to make a judgment on their claims. The user can select a fee that they are willing to pay. Registars are accepted via submitting proposals to the democracy process in Polkadot.
 
-Litentry has been accepted as a Registrar for Polkadot and for Kusama.
+Litentry has been accepted as a Registrar for Kusama.
