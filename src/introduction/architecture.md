@@ -18,13 +18,13 @@
 
 Litentry Runtime is built with Substrate, as such it inherits leading edge blockchain technologies.
 
-We use offchain worker to generate identity related data, and thus remove the uncertain and privacy issue <mark>by the client side applications.*I am not sure what you are trying to say here*</mark>
+We use offchain worker to fetch identity related data, and this data does not need to be stored centrally but on the user's client or a decentralized storage. Thus remove the uncertain and privacy issue by the client side applications.<!-- <mark>*I am not sure what you are trying to say here*</mark> -->
 
 We aim to be one of the first Parachains on the Polkadot <mark>and Kusama</mark> Network. As such we will benefit from this thriving cross-chain ecosystem.
 
 ### User Side
 
-The user has full control of their identity data, the data generated from Apps and the flows to their decentralized storage like IPFS or Arweave. <mark>The user's true identity is anonymous, cryptographic separated. *Is this what you are trying to say*</mark>
+The user has full control of their identity data, the data generated from Apps and the flows to their decentralized storage like IPFS or Arweave. <mark>The user's true identity is anonymous, cryptographic separated. <!-- <!-- *Is this what you are trying to say* --> --></mark>
 
 #### Litentry Authenticator
 
@@ -32,7 +32,7 @@ The user has full control of their identity data, the data generated from Apps a
 
 Personal users would like to use an application to manage all its identities, it could also become a Hub connected to different interest IoT devices. For example, directly buying the authorization or the data from other IoT devices. With the advantage of GPS of mobile phone, it could further integrate with LBS (Location Based Services).
 
-In order to work in a fully decentralized scenario, itself also need to integrate a cold wallet, where could keep a user's private key in a secure environment provided by Android or iOS. *I would need to chat to someone to figure out what this is saying* </mark>
+In order to work in a fully decentralized scenario, itself also need to integrate a cold wallet, where could keep a user's private key in a secure environment provided by Android or iOS.<!-- *I would need to chat to someone to figure out what this is saying*  I can not understand this as well. Actually we have stopped developing the Litentry Authenticator, maybe we can simply remove this section.^^ --></mark>
 
 #### DApps build with Litentry Protocol
 
@@ -50,7 +50,7 @@ In the future we will implement Arweave and on-Chain key value storage.
 
 It mainly includes:
 
-* Event listener and off-chain caching server:  With cached data the query load on the blockchain is dramatically reduced, furthermore, it saves the caching data on a centralized database in order to improve the speed of application-based blockchain query, like Infura for Ethereum. A relay script server is also built here, to automatically trigger an event <mark>on periodically regarding block generation.*I am not entirely sure what this sentence is trying to say*</mark>
+* Event listener and off-chain caching server:  With cached data the query load on the blockchain is dramatically reduced, furthermore, it saves the caching data on a centralized database in order to improve the speed of application-based blockchain query, like Infura for Ethereum. A relay script server is also built here, to automatically trigger an event <mark> periodically regarding block generation.<!-- *I am not entirely sure what this sentence is trying to say* I guess, the relay script server will throw out event periodically based on the block time --></mark>
 
 * GraphQL caching server: Since IPFS is still under testing, we currently use graphql caching server to improve user experience for syncing the data, it is also caching anonymous data, and improve data query speed.
 
