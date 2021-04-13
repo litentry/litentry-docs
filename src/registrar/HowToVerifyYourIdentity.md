@@ -77,4 +77,4 @@ It's important to notice that no KSM is sent to our registrar at any time before
 
 ### Support
 
-If you have any question, contact us via Element Room or registrar-support@litentry.com
+If you have any question, contact us via [Element Room](https://app.element.io/#/room/#litentry-registrar-support:matrix.org) or registrar-support@litentry.com
