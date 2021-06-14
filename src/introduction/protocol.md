@@ -4,20 +4,19 @@
 
 The decentralization of Litentry includes following aspects:
 
-* `Decentralization of identity storage`: User data, including identity credential, should be storage in the user's owned devices, instead of the central data server of service provider.
+* `Decentralization of identity storage`: User data, including identity credential, should be storage in the user's owned devices, instead of the central data server of a service provider.
 
-* `Dentralization of idenity authentication`: The identity validator connect to the decentralized network periodically, and it could validate the authentication request independently.
+* `Dentralization of idenity authentication`: The identity validator is connected to the decentralized network, and it validates the authentication request independently.
 
-* `Decentralization of identity ownership`: The relationship of data, person, and identity could be validated with cryptographic calculation, and it is also record in the decentralized network instead of regular centralized serviec like Certificate Authority used in HTTPS protocol
+* `Decentralization of identity ownership`: The relationship of data, person, and identity is validated with a cryptographic calculation, and it is also record in the decentralized network instead of centralized service like Certificate Authority using in HTTPS.
 
-* `Decentralization of Identity Data Allocating`: The user data generated when using third party applications/services could be processed by the resolver function on Litentry Network, thus provider user a trustworthy data, with allocate data from multiple applications/services, user are able to create valuable user profile like health info, shopping history, etc.
-
+* `Decentralization of Identity Data Allocating`: When users use third-party applications/services, they are producing a lot of valuable data. And those data will be collected and processed by the resolver function on the Litentry Network, which further will deliver value for the users. Such as users can create valuable profiles like health info, shopping history, etc. <!-- <mark>this provider uses trustworthy data.*I am not sure what this is trying to say*</mark>  -->
 ### Definitions
 
-* `User`: The origin of data, it a person who holds identities or IoT devices. 
-* `Identity`: It is a generalized concept of identity, not only include the identity of person, but also any thing could generate claims like IoT devices. A person could own multiple identities, like an identity in Germany, an identity as E-Resident in Estonia, or an identity as an game player.
-* `Authorization`: The permission in the reality or the claim in the blockchain world. It is a piece of data that could prove the ownership to a capability or a real thing. Like the permission to read the age data of a person, or the ownership of a 3D printer on a certain day.
-* `External Data`: It is the data generated when using the applications/services, like the shopping history when a user shopping in e-store, or the age data read from the aforementioned age proving request.
+* `User`: The originator of the data, the person who owns one or more identities or IoT devices.
+* `Identity`: It is a generalized concept of identity, not only include the identity of person, but also any thing could generate claims like an IoT devices. A person could own multiple identities, like an identity in Germany, an identity as E-Resident in Estonia, or an identity as an game player.
+* `Authorization`: It is a piece of data or a token that could proves a users ownership to a capability or a real world thing. Authorization could be the permission to read the age data of a person, or the ownership of a 3D printer on a certain day.
+* `External Data`: It is the data generated when using an applications/services, like the shopping history when a user shopping in e-store, or the age data read from the aforementioned age proving request.
 
 ### Network Interoperability
 
